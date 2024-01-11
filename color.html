@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Find a suitable color</title>
+    <style>
+      .output {
+        margin-top: 20px;
+        white-space: pre-wrap;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      input, p {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      button {
+        background-color: deepskyblue;
+        border-style: none;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+        padding-bottom: 5px;
+      }
+      
+      button:hover {
+        opacity: 0.8;
+      }
+
+      button:active {
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Enter first line:</p>
+    <input type= "text" id="userInput1">
+    <button onclick= "readInput(0)">Read</button>
+    <p>Enter second line:</p>
+    <input type= "text" id="userInput2">
+    <button onclick= "readInput(1)">Read</button>
+    <p>Enter desired color in hex:</p>
+    <input type= "text" id="userInput3">
+    <button onclick= "readInput(2)">Read</button>
+  
+    <button onclick= "findString()">Find String</button>
+    <p class="output"></p>
+  <body>
+  <script src="color.js"></script>
+<html>
+
